@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vasavi Sarees | Timeless Elegance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --ivory: #FCFBF7;
+            --maroon: #800000;
+            --royal-red: #A52A2A;
+            --gold: #D4AF37;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--ivory);
+            color: #1A1A1A;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-maroon { color: var(--maroon); }
+        .bg-maroon { background-color: var(--maroon); }
+        .border-gold { border-color: var(--gold); }
+        .text-gold { color: var(--gold); }
+        
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(252, 251, 247, 0.7), rgba(252, 251, 247, 0.7));
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-sticky w-full py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-2xl font-serif font-bold tracking-tight text-maroon">
+            SRI VASAVI SAREES
+        </div>
+        
+        <div class="hidden md:flex space-x-8 items-center text-sm font-medium tracking-wide">
+            <a href="#home" class="hover:text-maroon transition-colors">HOME</a>
+            <a href="#collections" class="hover:text-maroon transition-colors">COLLECTIONS</a>
+            <a href="#about" class="hover:text-maroon transition-colors">ABOUT</a>
+            <a href="#contact" class="hover:text-maroon transition-colors">CONTACT</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <button class="p-2"><i data-lucide="search" class="w-5 h-5"></i></button>
+            <button class="p-2 md:hidden" id="mobileMenuBtn"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section 
+  id="home"
+  class="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center"
+  style="background-image: url('https://images.pexels.com/photos/9415543/pexels-photo-9415543.jpeg?auto=compress&cs=tinysrgb&w=2000');"
+>
+    <!-- Soft overlay for readability -->
+    <div class="absolute inset-0 bg-white/70"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+        <span class="text-gold font-medium tracking-[0.2em] uppercase text-sm mb-4 block">
+            Crafting Traditions Since 1998
+        </span>
+
+        <h1 class="font-serif text-5xl md:text-7xl text-maroon mb-6 leading-tight">
+            Timeless Sarees for <br> Every Occasion
+        </h1>
+
+        <p class="text-lg text-gray-700 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Explore a curated collection of handpicked silk, cotton, and designer sarees
+            that celebrate the essence of Indian womanhood.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#collections"
+               class="bg-maroon text-white px-10 py-4 text-sm font-semibold tracking-widest hover:bg-black transition-all duration-300">
+                VIEW COLLECTIONS
+            </a>
+            <a href="#contact"
+               class="border border-maroon text-maroon px-10 py-4 text-sm font-semibold tracking-widest hover:bg-maroon hover:text-white transition-all duration-300">
+                VISIT SHOWROOM
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Collections Section -->
+    <section id="collections" class="py-24 px-6 md:px-12 bg-[#FCFBF7]">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl text-maroon mb-4">Our Signature Collections</h2>
+            <div class="w-24 h-px bg-gold mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Silk -->
+            <div class="group relative overflow-hidden bg-white hover-lift">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=800" alt="Silk Sarees" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-xl mb-2">Pure Silk Sarees</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest">Kanchipuram & Banarasi</p>
+                </div>
+            </div>
+
+            <!-- Cotton -->
+            <div class="group relative overflow-hidden bg-white hover-lift">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1621112904887-419379ce6824?q=80&w=800" alt="Cotton Sarees" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-xl mb-2">Cotton Sarees</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest">Handloom & Comfort</p>
+                </div>
+            </div>
+
+            <!-- Bridal -->
+            <div class="group relative overflow-hidden bg-white hover-lift">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=800" alt="Bridal Sarees" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-xl mb-2">Bridal Edit</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest">Wedding Specials</p>
+                </div>
+            </div>
+
+            <!-- Designer -->
+            <div class="group relative overflow-hidden bg-white hover-lift">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.pexels.com/photos/35441227/pexels-photo-35441227.jpeg" alt="Designer Sarees" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-xl mb-2">Designer Wear</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest">Modern Silhouettes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="py-20 bg-white">
+        <div class="px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="https://images.pexels.com/photos/5439054/pexels-photo-5439054.jpeg" alt="Fabric Detail" class="w-full h-[600px] object-cover shadow-2xl">
+            </div>
+            <div class="w-full md:w-1/2 space-y-6">
+                <h2 class="font-serif text-4xl text-maroon">The Art of Fine Weaving</h2>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Every saree at Sri Vasavi is a masterpiece. We work directly with weavers from across India to ensure the texture, zari, and fall of our fabrics are of the highest quality.
+                </p>
+                <div class="grid grid-cols-2 gap-8 pt-6">
+                    <div>
+                        <h4 class="font-serif text-2xl text-gold">10,000+</h4>
+                        <p class="text-sm text-gray-500 uppercase">Happy Brides</p>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-2xl text-gold">25 Years</h4>
+                        <p class="text-sm text-gray-500 uppercase">Of Excellence</p>
+                    </div>
+                </div>
+                <button class="mt-8 bg-maroon text-white px-8 py-3 text-sm font-semibold tracking-widest">LEARN OUR STORY</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-[#FAF8F5]">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+            <div class="space-y-4">
+                <div class="flex justify-center text-gold"><i data-lucide="award" class="w-10 h-10"></i></div>
+                <h3 class="font-serif text-lg">Premium Quality</h3>
+                <p class="text-sm text-gray-500">Authentic materials sourced from master weavers.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-center text-gold"><i data-lucide="shield-check" class="w-10 h-10"></i></div>
+                <h3 class="font-serif text-lg">Trusted Legacy</h3>
+                <p class="text-sm text-gray-500">Serving families with honesty since 1998.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-center text-gold"><i data-lucide="sparkles" class="w-10 h-10"></i></div>
+                <h3 class="font-serif text-lg">Handpicked Designs</h3>
+                <p class="text-sm text-gray-500">Unique patterns you won't find anywhere else.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-center text-gold"><i data-lucide="tag" class="w-10 h-10"></i></div>
+                <h3 class="font-serif text-lg">Affordable Luxury</h3>
+                <p class="text-sm text-gray-500">Fair pricing for exquisite craftsmanship.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-6 md:px-12 bg-white">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl text-maroon mb-4">Words from our Patrons</h2>
+            <div class="w-24 h-px bg-gold mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 bg-[#FCFBF7] text-center space-y-4 italic">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-gold">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200" alt="Customer" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-sm">"The bridal collection at Sri Vasavi is beyond words. I found my dream wedding Kanchipuram silk here, and the service was so personalized."</p>
+                <h4 class="font-serif text-maroon not-italic font-bold">— Anjali Reddy</h4>
+            </div>
+
+            <div class="p-8 bg-[#FCFBF7] text-center space-y-4 italic">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-gold">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200" alt="Customer" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-sm">"I've been buying cotton sarees here for years. The quality is consistent, and the designs are always fresh yet traditional."</p>
+                <h4 class="font-serif text-maroon not-italic font-bold">— Priya Sharma</h4>
+            </div>
+
+            <div class="p-8 bg-[#FCFBF7] text-center space-y-4 italic">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-gold">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e16fd3c?q=80&w=200" alt="Customer" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-sm">"The best place for premium silk. Their collection of designer sarees is perfect for party wear. Truly a luxury experience."</p>
+                <h4 class="font-serif text-maroon not-italic font-bold">— Meenakshi Iyer</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section id="contact" class="py-24 px-6 md:px-12 bg-maroon text-white">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="space-y-6 text-center md:text-left">
+                <h2 class="font-serif text-5xl">Experience our <br> Grand Showroom</h2>
+                <div class="space-y-4 text-gray-300">
+                    <p class="flex items-center justify-center md:justify-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-gold"></i>
+                        12-4-118, MG Road, Hyderabad, Telangana - 500003
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-gold"></i>
+                        +91 98765 43210 / 040-2345678
+                    </p>
+                </div>
+                <div class="pt-4">
+                    <button class="bg-gold text-maroon font-bold px-10 py-4 tracking-widest hover:bg-white transition-all">
+                        VISIT OUR SHOWROOM
+                    </button>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 bg-white p-1 rounded-sm shadow-xl">
+                <!-- Placeholder for map -->
+                <div class="bg-gray-100 aspect-square flex items-center justify-center text-gray-400">
+                    <i data-lucide="map" class="w-12 h-12"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 md:px-12 border-t border-gray-100 bg-white">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="text-2xl font-serif font-bold text-maroon mb-2">SRI VASAVI SAREES</div>
+                <p class="text-sm text-gray-500 max-w-xs">Preserving the heritage of Indian weaving through exquisite sarees since 1998.</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-maroon transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="text-gray-400 hover:text-maroon transition-colors"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="text-gray-400 hover:text-maroon transition-colors"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-gray-50 text-center text-xs text-gray-400 tracking-widest">
+            &copy; 2024 SRI VASAVI SAREES. ALL RIGHTS RESERVED.
+        </div>
+        <!-- Developer Attribution -->
+<div class="mt-12 pt-6 border-t border-gray-100 text-center text-xs tracking-[0.2em] text-gray-500">
+    Developed & Maintained by
+    <a href="https://www.leoaxis.com/" target="_blank"
+       class="font-semibold text-gold hover:text-maroon transition-colors">
+        www.leoaxis.com
+    </a>
+</div>
+
+    </footer>
+
+    <!-- Mobile Menu Overlay (Hidden) -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-[100] transform translate-x-full transition-transform duration-300 flex flex-col p-8">
+        <div class="flex justify-end">
+            <button id="closeMenuBtn" class="p-2"><i data-lucide="x" class="w-8 h-8"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center flex-grow space-y-8 text-2xl font-serif">
+            <a href="#home" class="mobile-link">HOME</a>
+            <a href="#collections" class="mobile-link">COLLECTIONS</a>
+            <a href="#about" class="mobile-link">ABOUT</a>
+            <a href="#contact" class="mobile-link">CONTACT</a>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        const closeMenu = () => {
+            mobileMenu.classList.add('translate-x-full');
+        };
+
+        closeMenuBtn.addEventListener('click', closeMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+        // Subtle Scroll Header Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
+
